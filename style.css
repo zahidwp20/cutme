@@ -1,0 +1,31 @@
+@charset "utf-8";
+/*
+Theme Name: Cutme
+Text Domain: cutme
+Version: 1.0.0
+Tested up to: 6.0
+Requires at least: 4.7
+Requires PHP: 5.2.4
+Description: Theme for cutme.io
+Author: cutme
+Author URI: https://cutme.io
+Theme URI: https://cutme.io
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600;7..72,700&display=swap');
+
+:root {
+    --color-main: #0A91B1;
+    --color-black: #093344;
+    --color-black-2: #393E46;
+    --color-gray: #817C7C;
+    --primary-button-bg: #0A91B1;
+}

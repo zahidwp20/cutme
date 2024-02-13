@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  a {
+    @apply hover:text-primary-500 duration-100;
+  }
+
+  .main-menu > ul > li > a {
+    @apply text-lg font-inter font-normal hover:text-primary-500 block transition md:px-4 active:text-primary-500;
+  }
+
+  .footer-menu > ul > li > a {
+    @apply hover:text-primary-500 text-lg duration-100;
+  }
+
+  header nav.fixedHeader {
+    box-shadow: 0px 3px 11px 0px rgb(0 0 0 / 10%);
+    padding: 16px 0;
+    transition: 0.3s;
+  }
+
+  .it-video::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    height: 90%;
+    transform: scale(1.5);
+    border: 6px solid rgba(255, 255, 255, 0.2);
+    animation: borderanimate2 2s linear infinite;
+    border-radius: 50%;
+  }
+
+  .it-video::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    width: 70%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.2);
+    animation: borderanimate2 2s linear infinite;
+    z-index: -1;
+    border-radius: 50%;
+  }
+
+  .accordion .at-tab {
+    display: none;
+  }
+
+  .accordion .at-title.active {
+    color: #ffffff;
+    background-color: #0a91b1;
+    transition: background-color 0.3s ease;
+  }
+
+  .accordion .at-title span .plus {
+    position: relative;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    margin-left: 5px;
+    pointer-events: none;
+  }
+
+  .accordion .at-title span .plus::before,
+  .accordion .at-title span .plus::after {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 50%;
+    height: 2px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #000000;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+  }
+
+  .accordion .at-title span .plus::before {
+    transform: rotate(-90deg);
+  }
+  .accordion .at-title span .plus::after {
+    transform: rotate(0deg);
+  }
+
+  .accordion .at-title.active span .plus::before {
+    transform: rotate(0deg);
+    background-color: #ffffff;
+    z-index: 1;
+  }
+
+  .values-group:hover svg path {
+    fill: #0a91b1;
+  }
+
+  .page-numbers.current,
+  a.page-numbers {
+    background: #dff0f4;
+    color: #093344;
+    padding: 5px 10px;
+    display: flex;
+    font-size: 24px;
+    font-family: "Inter";
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .page-numbers.current {
+    background: #0a91b1;
+    color: #ffffff;
+  }
+
+  @keyframes borderanimate2 {
+    0% {
+      transform: translate(-50%, -50%) scale(0.8);
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(2.5);
+      opacity: 0;
+    }
+  }
+
+  .btn-primary-500 {
+    @apply relative px-8 py-4 inline-block text-lg font-normal font-inter rounded-full items-center overflow-hidden bg-primary-500 text-white transition-all before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-full before:bg-white before:duration-300 before:ease-out hover:text-primary-500  hover:before:h-full hover:before:w-full;
+  }
+
+  .btn-outline-500 {
+    @apply relative px-8 py-3 inline-block text-lg font-normal font-inter overflow-hidden border-2 rounded-full border-primary-500 text-primary-500 transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:bg-primary-500 before:duration-300 before:ease-out hover:text-white hover:before:h-full hover:before:w-full;
+  }
+}
+
+@layer base {
+}

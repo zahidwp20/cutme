@@ -1,0 +1,13 @@
+.DS_Store
+/*.idea
+/*.htaccess
+/*.txt
+/*.ico
+*.ini
+/*.html
+/!.gitignore
+.vscode
+package-lock.json
+css
+
+node_modules

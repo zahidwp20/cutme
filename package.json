@@ -1,0 +1,13 @@
+{
+    "devDependencies": {
+        "autoprefixer": "^10.4.15",
+        "postcss": "^8.4.28",
+        "sass": "^1.66.1",
+        "tailwindcss": "^3.3.3",
+        "tailwindcss-cli": "^0.1.2"
+    },
+    "scripts": {
+        "tailwind": "npx tailwindcss -i ./css-src/tailwind.css -o ./css/tailwind.min.css --minify --watch",
+        "start": "sass --watch css-src/main.scss css/theme-main.min.css --style compressed"
+    }
+}
