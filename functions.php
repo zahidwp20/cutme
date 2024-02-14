@@ -163,3 +163,16 @@ function cutme_cta_list(){
     $customListTable->display();
 	echo '</div>';
 }
+
+function cutme_widgets_init() {
+    register_sidebar( array(
+        'name'          => __( 'Recent Posts Sidebar', 'cutme' ),
+        'id'            => 'sidebar-recent-posts',
+        'description'   => __( 'Add widgets here to display recent posts in the sidebar.', 'cutme' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'cutme_widgets_init' );
