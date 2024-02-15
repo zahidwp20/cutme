@@ -10,7 +10,7 @@ get_template_part('templates-parts/part', 'banner');
 <section class="py-28">
     <div class="mx-auto max-w-7xl px-4 lg:px-0">
         <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-12">
-            <div class="col-span-8">
+            <div class="col-span-12 lg:col-span-8">
                 <div class="grid gap-8 md:grid-cols-2">
                     <?php
                     // the query to set the posts per page to 3
@@ -84,8 +84,9 @@ get_template_part('templates-parts/part', 'banner');
                     ?>
                 </div>
             </div>
-            <div class="col-span-4">
+            <div class="col-span-12 lg:col-span-4">
                 <?php get_sidebar(); ?>
+                <!-- <?php dynamic_sidebar('sidebar-recent-posts'); ?> -->
             </div>
         </div>
     </div>

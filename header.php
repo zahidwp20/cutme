@@ -22,12 +22,12 @@
                     <div class="relative w-full z-20 flex justify-between md:px-0 lg:w-max">
                         <div class="flex items-center">
                             <a href="http://cutme.local"
-                                class="logo-font flex items-center w-[180px] lg:w-[220px] text-3xl bg-clip-text text-transparent">
+                                class="logo-font flex items-center  text-3xl bg-clip-text text-transparent">
                                 <img src="http://cutme.local/wp-content/themes/cutme/images/cutme-logo.svg"
                                     alt="Cutme-Logo">
                             </a>
                             <a href="#"
-                                class="hidden lg:inline-block rounded-full bg-white px-6 py-2 text-lg text-gray-700 ring-1 ring-primary-800 hover:bg-primary-800">
+                                class="hidden lg:inline-block ml-5 rounded-full bg-white px-6 py-2 text-lg text-gray-700 ring-1 ring-primary-800 hover:bg-primary-800">
                                 <span class="inline-block leading-none">https://dribbble.com/jobs/projects/messages?page</span>
                             </a>
                         </div>
@@ -44,7 +44,7 @@
                         class="fixed inset-0 z-10 h-screen w-screen bg-gray-100/70 backdrop-blur-2xl transition duration-500 lg:hidden origin-bottom scale-y-0">
                     </div>
                     <div id="navlinks"
-                        class="invisible absolute top-full left-0 z-20 origin-top-right translate-y-1/2 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-primary-500 p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 lg:visible lg:relative lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none">
+                        class="invisible w-full lg:w-auto absolute top-full left-0 z-20 origin-top-right translate-y-1/2 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-primary-500 p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 lg:visible lg:relative lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none">
 
                         <?php wp_nav_menu(
                             array(
@@ -57,7 +57,7 @@
                     </div>
                     <div
                         class="get-started-area relative pl-4 mt-12 lg:mt-0 lg:flex items-center hidden lg:visible border-gray-100">
-                        <div class="vr-line absolute top-1/2 -translate-y-1/2 left-0 w-[2px] h-4 bg-black"></div>
+                        <div class="vr-line absolute top-1/2 -translate-y-1/2 -left-2 w-[2px] h-4 bg-black"></div>
                         <a href="#" class="relative flex w-full items-center justify-center px-2 sm:w-max">
                             <span>
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"

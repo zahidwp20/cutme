@@ -14,7 +14,7 @@ get_header();
 
 		<?php the_archive_title('<div class="pb-title-bar"><h2 class="entry-title">', '</h2></div>') ?>
 
-        <div class="container">
+        <div class="max-w-7xl mx-auto">
             <div class="row">
                 <div class="col-lg-8">
 					<?php

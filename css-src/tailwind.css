@@ -119,6 +119,27 @@
     color: #ffffff;
   }
 
+  .cutme-search form#searchform {
+    position: relative;
+  }
+
+  .cutme-search form#searchform input#s {
+    background: #e5f2f5;
+    border-radius: 30px;
+    padding: 15px 110px 15px 28px;
+    width: 100%;
+    outline: none;
+  }
+
+  .cutme-search form#searchform input#searchsubmit {
+    background: #0A91B1;
+    color: #ffffff;
+    padding: 15px 20px;
+    position: absolute;
+    right: 0;
+    border-radius: 0 30px 30px 0;
+  }
+
   @keyframes borderanimate2 {
     0% {
       transform: translate(-50%, -50%) scale(0.8);
