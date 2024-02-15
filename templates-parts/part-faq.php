@@ -27,25 +27,25 @@ $faq_items = array(
 
 ?>
 <!-- faq-start -->
-<section class="relative py-24 bg-[#D5EAF0] lg:mx-12 lg:rounded-xl">
+<section class="relative pt-24 pb-14 lg:mx-12 lg:rounded-xl">
     <div class="mx-auto max-w-7xl px-4 lg:px-0">
         <div class="mx-auto md:w-full lg:w-8/12">
             <h2
                 class="font-bold font-literata text-center text-3xl lg:text-[55px] lg:leading-[70px] text-primary-950 mb-8">
                 Frequently Asked Questions
             </h2>
-            <p class="text-lg mb-6 text-primary-950 text-center px-0 lg:px-10">
+            <p class="text-lg mb-14 text-primary-950 text-center px-4 lg:px-14">
                 It is a long established fact that a reader will be distracted by the readable content of a page when
                 looking at its layout.
             </p>
         </div>
-        <div class="py-4 lg:py-20 flex flex-col gap-12 lg:flex-row">
+        <div class="flex flex-col">
             <div class="w-full lg:w-8/12 mx-auto">
                 <div class="accordion">
                     <?php $firstItem = true; ?>
                     <?php foreach ($faq_items as $item): ?>
                         <div class="at-item mb-8 rounded-md overflow-hidden">
-                            <div class="at-title <?= $firstItem ? 'active' : '' ?> cursor-pointer text-primary-950 bg-white relative transition-all p-5 flex justify-between items-center">
+                            <div class="at-title <?= $firstItem ? 'active' : '' ?> cursor-pointer text-primary-950 bg-primary-100 relative transition-all p-5 flex justify-between items-center">
                                 <h5 class="font-semibold font-inter">
                                     <?= $item['question'] ?>
                                 </h5>

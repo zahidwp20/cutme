@@ -4,6 +4,9 @@
  */
 
 ?>
+
+<?php get_template_part('templates-parts/part', 'cta'); ?>
+
 <footer class="bg-primary-400 pt-44">
     <div class="m-auto max-w-7xl px-4 lg:px-0 pb-16">
         <div class="grid grid-cols-12 gap-6 md:gap-0 lg:gap-8">
@@ -23,13 +26,13 @@
                             <h4 class="font-semibold font-inter text-2xl text-primary-950 mb-8">
                                 Follow Us
                             </h4>
-                            <ul class="flex gap-3 items-center">
+                            <ul class="flex gap-3 items-baseline">
                                 <li class="inline-block">
                                     <a href="#" class="text-gray-900 text-xl">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        <svg width="14" height="24" viewBox="0 0 14 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M10.0591 0.399902C15.3934 0.399902 19.7178 4.72424 19.7178 10.0586C19.7178 14.8795 16.1857 18.8754 11.5683 19.5999V12.8506H13.8188L14.247 10.0586H11.5683V8.24678C11.5683 7.48294 11.9424 6.73842 13.1423 6.73842H14.3602V4.36147C14.3602 4.36147 14.2911 4.34968 14.171 4.332C13.8106 4.27894 12.9907 4.17283 12.1981 4.17283C11.9223 4.17283 11.6585 4.19372 11.4079 4.23501C9.65393 4.52404 8.54991 5.81254 8.54991 7.93066V10.0586H6.09751V12.8506H8.54991V19.5999C3.93243 18.8754 0.400391 14.8795 0.400391 10.0586C0.400391 4.72424 4.72473 0.399902 10.0591 0.399902Z"
+                                            <path
+                                                d="M8.85868 24V13.0533H12.5316L13.0826 8.78588H8.85868V6.06176C8.85868 4.82664 9.20026 3.98492 10.9734 3.98492L13.2313 3.98399V0.167076C12.8408 0.116334 11.5005 0 9.9405 0C6.68298 0 4.45282 1.98836 4.45282 5.63912V8.78588H0.768799V13.0533H4.45282V24H8.85868Z"
                                                 fill="#093344" />
                                         </svg>
                                     </a>
@@ -86,30 +89,16 @@
                     ); ?>
                 </div>
             </div>
-            <div class="col-span-12 md:col-span-4 lg:col-span-2 mt-0 md:mt-8">
-                <div class="mb-8 lg:mb-0">
-                    <h4 class="font-semibold font-inter text-2xl text-primary-950 mb-8">
-                        Product
-                    </h4>
-                    <?php wp_nav_menu(
-                        array(
-                            'theme_location' => 'footer-2',
-                            'container_class' => 'footer-menu',
-                            'menu_class' => 'list-inside space-y-3 font-inter font-normal text-gray-500 text-lg',
-                        )
-                    ); ?>
-                </div>
-            </div>
-            <div class="col-span-12 md:col-span-4 lg:col-span-2 mt-0 md:mt-8">
+            <div class="col-span-12 md:col-span-4 lg:col-span-4 mt-0 md:mt-8">
                 <div class="mb-8 lg:mb-0">
                     <h4 class="font-semibold font-inter text-2xl text-primary-950 mb-8">
                         Resource
                     </h4>
                     <?php wp_nav_menu(
                         array(
-                            'theme_location' => 'footer-3',
+                            'theme_location' => 'footer-2',
                             'container_class' => 'footer-menu',
-                            'menu_class' => 'list-inside space-y-3 font-inter font-normal text-gray-500 text-lg',
+                            'menu_class' => 'font-inter font-normal text-gray-500 text-lg grid gap-3 grid-cols-1 md:grid-cols-2',
                         )
                     ); ?>
                 </div>
@@ -130,15 +119,13 @@
             </div>
         </div>
     </div>
-    <div
-        class="max-w-7xl mx-auto px-4 lg:px-0 py-8 mt-0 border-t border-black flex justify-between items-center">
+    <div class="max-w-7xl mx-auto px-4 lg:px-0 py-8 mt-0 border-t border-black flex justify-between items-center">
         <div class="w-full lg:w-6/12 mx-auto text-center">
             <span class="text-black text-lg inline-block font-inter font-normal">Copyright © 2024. All rights are
                 reserved Link Shorter</span>
         </div>
     </div>
 </footer>
-
 <?php wp_footer(); ?>
 </body>
 

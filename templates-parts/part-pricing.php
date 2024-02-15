@@ -2,7 +2,7 @@
 
 ?>
 <!-- pricing-area-start -->
-<section class="relative py-24 pricing-plan-section">
+<section class="relative py-28 pricing-plan-section">
 	<div class="mx-auto max-w-7xl px-4 lg:px-0">
 		<div class="mx-auto w-full lg:w-3/4 text-center">
 			<h2 class="font-bold font-literata text-3xl lg:text-[55px] lg:leading-[70px] text-primary-950 mb-6">
@@ -21,7 +21,7 @@
 					class="vr-line hidden md:inline-block absolute top-1/2 -translate-y-1/2 right-5 w-[2px] h-full rounded-full bg-[#57848E]">
 				</div>
 				<div>
-					<span class="text-3xl font-bold text-gray-900">$79</span>
+					<span class="text-3xl font-bold text-gray-900 line-through">$79</span>
 					<p class="mt-4 flex items-baseline">
 						<span class="text-2xl lg:text-4xl font-medium text-primary-500">$</span>
 						<span
@@ -134,9 +134,6 @@
 						</svg>
 						It is a long established fact that 
 					</li>
-					
-
-
 				</ul>
 			</div>
 		</div>

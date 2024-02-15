@@ -262,6 +262,4 @@ get_template_part('templates-parts/part', 'faq'); ?>
 
 
 <?php
-get_template_part('templates-parts/part', 'cta');
-
 get_footer();
