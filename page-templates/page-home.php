@@ -7970,25 +7970,25 @@ get_header();
 <!-- counter-start -->
 <section class="relative py-24 bg-[#0E4858] lg:mx-12 lg:rounded-xl">
     <div class="mx-auto max-w-7xl px-4 lg:px-0 grid items-center gap-[30px] lg:grid-cols-12 relative">
-        <div class="col-span-3 bg-gradient-to-br from-[#0A91B1] via-rgba(10, 145, 177, 0) to-transparent">
+        <div class="col-span-3 bg-gradient-to-br from-[#0A91B1] via-rgba(10, 145, 177, 0) to-transparent overflow-hidden">
             <div class="border border-white rounded-lg px-10 py-14">
                 <h3 class="text-4xl font-bold font-literata text-white mb-6 text-center">2 Billion</h3>
                 <span class="text-white tetx-lg font-inter text-center block">Clicks tracked each month</span>
             </div>
         </div>
-        <div class="col-span-3 bg-gradient-to-br from-[#0A91B1] via-rgba(10, 145, 177, 0) to-transparent">
+        <div class="col-span-3 bg-gradient-to-br from-[#0A91B1] via-rgba(10, 145, 177, 0) to-transparent overflow-hidden">
             <div class="border border-white rounded-lg px-10 py-14">
                 <h3 class="text-4xl font-bold font-literata text-white mb-6 text-center">1 Billion</h3>
                 <span class="text-white tetx-lg font-inter text-center block">Ongoing Branding Progress</span>
             </div>
         </div>
-        <div class="col-span-3 bg-gradient-to-br from-[#0A91B1] via-rgba(10, 145, 177, 0) to-transparent">
+        <div class="col-span-3 bg-gradient-to-br from-[#0A91B1] via-rgba(10, 145, 177, 0) to-transparent overflow-hidden">
             <div class="border border-white rounded-lg px-10 py-14">
                 <h3 class="text-4xl font-bold font-literata text-white mb-6 text-center">1.3 Billion</h3>
                 <span class="text-white tetx-lg font-inter text-center block">Happy customers</span>
             </div>
         </div>
-        <div class="col-span-3 bg-gradient-to-br from-[#0A91B1] via-rgba(10, 145, 177, 0) to-transparent">
+        <div class="col-span-3 bg-gradient-to-br from-[#0A91B1] via-rgba(10, 145, 177, 0) to-transparent overflow-hidden">
             <div class="border border-white rounded-lg px-10 py-14">
                 <h3 class="text-4xl font-bold font-literata text-white mb-6 text-center">90000</h3>
                 <span class="text-white tetx-lg font-inter text-center block">Developers using our APIs</span>

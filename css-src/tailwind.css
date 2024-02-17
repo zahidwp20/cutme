@@ -140,6 +140,7 @@
     border-radius: 0 30px 30px 0;
   }
 
+
   @keyframes borderanimate2 {
     0% {
       transform: translate(-50%, -50%) scale(0.8);

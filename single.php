@@ -57,9 +57,14 @@ while (have_posts()):
         </div>
     </div>
 
+<?php endwhile; ?>
+<div class="mx-auto max-w-7xl px-4 sm:px-12 lg:px-0">
+    <div class="w-full md:w-10/12 lg:w-9/12">
+        <div class="cutme-post-comments comments">
+            <?php comments_template(); ?>
+        </div>
+    </div>
+</div>
 
-    <?php
-
-endwhile;
-
+<?php
 get_footer();
