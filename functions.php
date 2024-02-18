@@ -186,19 +186,19 @@ add_action('widgets_init', 'cutme_widgets_init');
 
 function wpdocs_remove_website_field($fields)
 {
-	$comments = wp_get_current_commenter();
-	$req = get_option('require_name_email');
-	unset($fields['url']);
-	unset($fields['cookies']);
-	$fields['author'] = '<div class="grid grid-cols-1 md:grid-cols-2 gap-8"> <div>' . ($req ? '<span class="required">*</span>' : '' ) . '<input type="name" id="name" class="bg-primary-200 border border-primary-500 text-gray-700 text-lg rounded-md focus:ring-primary-500 focus:border-primary-500 block w-full px-2.5 py-4 placeholder-gray-400 outline-none" placeholder="Your Name" required="" value="' . esc_attr($comments['comment_author']) . '">'.'</div>';
-	$fields['email'] = '<div>' . '<input type="email" id="email" class="bg-primary-200 border border-primary-500 text-gray-700 text-lg rounded-md focus:ring-primary-500 focus:border-primary-500 block w-full px-2.5 py-4 placeholder-gray-400 outline-none" placeholder="Your Email" required="" value="' . esc_attr($comments['comment_author_email']) . '">'.'</div> </div>';
+    $comments = wp_get_current_commenter();
+    $req = get_option('require_name_email');
+    unset($fields['url']);
+    // unset($fields['cookies']);
+    // $fields['author'] = '<div class="grid grid-cols-1 md:grid-cols-2 gap-8"> <div>' . ($req ? '<span class="required"></span>' : '' ) . '<input type="text" id="author" name="author" class="bg-primary-200 border border-primary-500 text-gray-700 text-lg rounded-md focus:ring-primary-500 focus:border-primary-500 block w-full px-2.5 py-4 placeholder-gray-400 outline-none" placeholder="Your Name" required="" value="' . esc_attr($comments['comment_author']) . '">'.'</div>';
+    // $fields['email'] = '<div>' . '<input type="email" id="email" name="email" class="bg-primary-200 border border-primary-500 text-gray-700 text-lg rounded-md focus:ring-primary-500 focus:border-primary-500 block w-full px-2.5 py-4 placeholder-gray-400 outline-none" placeholder="Your Email" required="" value="' . esc_attr($comments['comment_author_email']) . '">'.'</div> </div>';
 
-	return $fields;
+    return $fields;
 }
-
 add_filter('comment_form_default_fields', 'wpdocs_remove_website_field');
-function comment_texarea($comment_field){
-	$comment_field = '<div class="mt-8 mb-8">' . '<textarea id="message" rows="8" class="block bg-primary-200 border border-primary-500 text-gray-700 text-lg rounded-md focus:ring-primary-500 focus:border-primary-500 w-full px-2.5 py-4 placeholder-gray-400 outline-none" placeholder="Message"></textarea>'.'</div>';
-	return $comment_field;
-}
-add_filter('comment_form_field_comment', 'comment_texarea');
+
+// function comment_texarea($comment_field){
+//     $comment_field = '<div class="grid mt-8 mb-8">' . '<textarea id="comment" name="comment" rows="8" class="block bg-primary-200 border border-primary-500 text-gray-700 text-lg rounded-md focus:ring-primary-500 focus:border-primary-500 w-full px-2.5 py-4 placeholder-gray-400 outline-none" placeholder="Message"></textarea>'.'</div>';
+//     return $comment_field;
+// }
+// add_filter('comment_form_field_comment', 'comment_texarea');
